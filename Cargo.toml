@@ -1,0 +1,18 @@
+[package]
+name ="agentic_ai_governance"
+version ="0.1.0"
+edition = "2021"
+
+[dependencies]
+#engine for running tasks at the same time
+tokio ={version = "1.35", features = ["full"]}
+#web server for proxy
+axum ="0.7"
+
+
+serde = {version = "1.0", features =["derive"] }
+serde_json = "1.0"
+
+reqwest ={version = "0.12", features = ["json"]}
+cedar-policy ="4.0"
+
